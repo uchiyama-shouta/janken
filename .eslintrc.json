@@ -12,7 +12,7 @@
     "prefer-const": "error",
     "func-style": ["error", "expression"],
     "react/react-in-jsx-scope": "off",
-    "react/display-name": "error",
+    "react/display-name": "off",
     "react/jsx-handler-names": [
       "error",
       {
@@ -21,6 +21,7 @@
         "checkLocalVariables": true,
         "checkInlineFunction": true
       }
-    ]    
+    ],
+    "tailwindcss/classnames-order": "off"
   }
 }
