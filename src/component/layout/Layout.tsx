@@ -1,17 +1,18 @@
-import type { ReactNode, VFC } from "react";
-import { useEffect } from "react";
+import type { ReactNode, FC } from "react";
+import { useEffect, lazy } from "react";
 import { useAtom } from "jotai";
 
 import { Header } from "component/layout/Header";
 import { resultAtom } from "atom/jankenAtom";
 import { useModal } from "hooks/useModal";
-import { Modal } from "component/Modal";
 
 type Props = {
   children: ReactNode;
 };
 
-export const Layout: VFC<Props> = ({ children }) => {
+const Modal = lazy(() => import("component/Modal"));
+
+export const Layout: FC<Props> = ({ children }) => {
   const { handleOpenModal } = useModal();
   const [result] = useAtom(resultAtom);
   useEffect(() => {

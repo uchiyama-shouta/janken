@@ -1,9 +1,9 @@
-import type { VFC } from "react";
+import type { FC } from "react";
 import Image from "next/image";
 import { useAtom } from "jotai";
 import { opponentJankenAtom } from "atom/jankenAtom";
 
-export const Opponent: VFC = () => {
+export const Opponent: FC = () => {
   const [action] = useAtom(opponentJankenAtom);
   const jankenn = {
     "gu-": "/image/gu-.png",

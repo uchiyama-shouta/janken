@@ -1,4 +1,4 @@
-import type { VFC } from "react";
+import type { FC } from "react";
 import { memo } from "react";
 import Image from "next/image";
 import { useJanken } from "hooks/useJanken";
@@ -8,7 +8,7 @@ type Props = {
   action: Action;
 };
 
-export const JankenButton: VFC<Props> = memo(({ action }) => {
+export const JankenButton: FC<Props> = memo(({ action }) => {
   const { handleClick } = useJanken();
   const jankenn = {
     "gu-": "/image/gu-.png",
