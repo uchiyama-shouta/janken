@@ -12,7 +12,6 @@ const Modal: FC = () => {
     handleReset();
   };
 
-  console.log(isOpen);
   return (
     <MantineModal
       opened={isOpen}
