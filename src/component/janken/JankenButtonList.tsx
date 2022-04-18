@@ -1,7 +1,7 @@
-import { JankenButton } from "component/janken/JankenButton";
+import JankenButton from "component/janken/JankenButton";
 import { memo } from "react";
 
-export const JankenButtonList = memo(() => {
+const JankenButtonList = memo(() => {
   return (
     <div className="fixed inset-x-0 bottom-20 flex justify-around">
       <JankenButton action="gu-" />
@@ -10,3 +10,5 @@ export const JankenButtonList = memo(() => {
     </div>
   );
 });
+
+export default JankenButtonList;

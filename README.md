@@ -22,7 +22,8 @@ or
 yarn create next-app test --example https://github.com/uchiyama-shouta/next-template
 ```
 
-### componentsディレクトリを作成
+### components ディレクトリを作成
+
 ```
 yarn
 mkdir src/components

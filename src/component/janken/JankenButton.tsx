@@ -8,7 +8,7 @@ type Props = {
   action: Action;
 };
 
-export const JankenButton: FC<Props> = memo(({ action }) => {
+const JankenButton: FC<Props> = memo(({ action }) => {
   const { handleClick } = useJanken();
   const jankenn = {
     "gu-": "/image/gu-.png",
@@ -26,3 +26,5 @@ export const JankenButton: FC<Props> = memo(({ action }) => {
     </div>
   );
 });
+
+export default JankenButton;

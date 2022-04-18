@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import { JankenButtonList } from "component/janken/JankenButtonList";
-import { Opponent } from "component/janken/Opponent";
-import { Layout } from "component/layout/Layout";
-import { ResultText } from "component/ResultText";
+import JankenButtonList from "component/janken/JankenButtonList";
+import Opponent from "component/janken/Opponent";
+import Layout from "component/layout/Layout";
+import ResultText from "component/ResultText";
 
 const Home: NextPage = () => {
   return (

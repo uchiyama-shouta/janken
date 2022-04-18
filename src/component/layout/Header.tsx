@@ -1,7 +1,11 @@
 import { memo } from "react";
 
-export const Header = memo(() => {
+const Header = memo(() => {
   return (
-    <header className="border-b text-center text-xl py-3">じゃんけんゲーム</header>
+    <header className="border-b py-3 text-center text-xl">
+      じゃんけんゲーム
+    </header>
   );
 });
+
+export default Header;
